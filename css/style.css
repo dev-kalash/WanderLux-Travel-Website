@@ -50,11 +50,15 @@ body{
     text-align:center;
 
     padding:150px 20px;
+
+    transition: all 1s ease-in-out;
 }
 
 .hero-content{
     max-width:800px;
     margin:auto;
+    opacity:1;
+    transition:opacity 0.8s ease-in-out;
 }
 
 .hero h1{
@@ -292,4 +296,18 @@ textarea{
         padding:30px 15px;
     }
 
+}
+
+/* ===== Rotating Hero Banner ===== */
+
+.fade-out{
+    opacity:0;
+}
+
+#heroDestination{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#F4B400;
+    margin-bottom:20px;
+    transition:opacity 0.8s ease-in-out;
 }

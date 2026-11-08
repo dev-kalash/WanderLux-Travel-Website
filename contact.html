@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">WanderLux</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Destinations & Services</a></li>
+<li><a href="calculator.html">Trip Calculator</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="page-content hidden">
+
+    <h1>Contact WanderLux Travel Agency</h1>
+
+    <section class="contact-info">
+
+        <h2>Our Office</h2>
+
+        <p>
+            Levels 3–5, 98–104 Goulburn Street, Sydney NSW 2000
+        </p>
+
+        <p>
+            Phone: +61 2 9000 1234
+        </p>
+
+        <p>
+            Email: info@wanderlux.com
+        </p>
+
+    </section>
+
+    <h2>Find Us</h2>
+
+        <iframe
+        src="https://maps.google.com/maps?q=98-104%20Goulburn%20Street%20Sydney%20NSW%202000&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        loading="lazy">
+        </iframe>
+
+    
+    <section class="contact-form-section">
+
+        <h2>Send Us a Message</h2>
+
+<p>
+    Complete the form below and one of our travel
+    consultants will contact you within 24 hours.
+</p>
+
+
+        <form id="contactForm" class="calculator-form">
+
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" required>
+
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" required>
+
+            <label for="contactMessage">Message</label>
+            <textarea
+                id="contactMessage"
+                rows="5"
+                required>
+            </textarea>
+
+            <button
+                type="button"
+                onclick="validateContact()">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+        <div id="contactResult"></div>
+
+    </section>
+
+</main>
+
+<script src="js/validation.js"></script>
+
+<footer>
+
+    <h3>WanderLux Travel Agency</h3>
+
+    <p>
+        Personalized travel planning for unforgettable journeys.
+    </p>
+
+    <p>
+        Email: info@wanderlux.com
+    </p>
+
+    <p>
+        Phone: +61 2 9000 1234
+    </p>
+
+    <p>
+        © 2026 WanderLux Travel Agency
+    </p>
+
+</footer>
+
+<script>
+    emailjs.init("tn5l8R95jVnQhb4VK");
+</script>
+
+<script src="js/validation.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

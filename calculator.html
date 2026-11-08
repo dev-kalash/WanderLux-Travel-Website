@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Cost Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">WanderLux</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Destinations & Services</a></li>
+<li><a href="calculator.html">Trip Calculator</a></li>
+<li><a href="appointment.html">Appointment</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<main class="page-content">
+
+    <h1>Trip Cost Calculator</h1>
+
+    <p>
+    Use our interactive calculator to estimate the
+    cost of your next adventure based on destination,
+    travellers, duration and travel style.
+</p>    
+
+
+    <form id="tripForm" class="calculator-form">
+
+        <label for="destination">Destination</label>
+
+        <select id="destination">
+
+            <option value="Nepal">Nepal</option>
+            <option value="Australia">Australia</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bali">Bali</option>
+            <option value="Japan">Japan</option>
+            
+
+        </select>
+
+        <label for="travellers">Number of Travellers</label>
+
+        <input
+            type="number"
+            id="travellers"
+            min="1"
+            required
+        >
+
+        <label for="days">Number of Days</label>
+
+        <input
+            type="number"
+            id="days"
+            min="1"
+            required
+        >
+
+        <label for="style">Travel Style</label>
+
+        <select id="style">
+
+            <option value="1">Budget</option>
+            <option value="1.5">Standard</option>
+            <option value="2">Luxury</option>
+
+        </select>
+
+        <button type="button" onclick="calculateTrip()">
+            Calculate Cost
+        </button>
+
+    </form>
+
+    <div id="result"></div>
+
+</main>
+
+<script src="js/calculator.js"></script>
+
+<footer>
+
+    <h3>WanderLux Travel Agency</h3>
+
+    <p>
+        Personalized travel planning for unforgettable journeys.
+    </p>
+
+    <p>
+        Email: info@wanderlux.com
+    </p>
+
+    <p>
+        Phone: +61 2 9000 1234
+    </p>
+
+    <p>
+        © 2026 WanderLux Travel Agency
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
